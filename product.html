@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل الجهاز | Golden Sens</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="ChatGPT Image 23 يونيو 2026، 02_07_49 م.png" alt="شعار Golden Sens" onerror="this.style.display='none'">
+        <div class="brand-title">
+          <span class="brand-name">GOLDEN SENS</span>
+          <span class="brand-sub">كواشف المعادن والماسحات 3D</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الكاشفات</a></li>
+          <li><a href="about.html" class="nav-link">من نحن</a></li>
+          <li><a href="programs.html" class="nav-link">البرامج</a></li>
+          <li><a href="learn.html" class="nav-link">تعلم</a></li>
+          <li><a href="index.html#trust" class="nav-link">الخدمة والدعم</a></li>
+          <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Floating Direct WhatsApp Icon Link -->
+        <a href="https://wa.me/970595283261" target="_blank" class="header-wa-icon" title="تواصل فوري عبر الواتساب">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <div class="custom-lang-dropdown">
+          <button type="button" class="lang-dropdown-btn">
+            <img src="flags/palestine.svg" alt="فلسطين" class="lang-flag-img">
+            <span class="lang-text">العربية (AR)</span>
+            <i class="fas fa-chevron-down lang-chevron"></i>
+          </button>
+          <div class="lang-dropdown-menu">
+            <div class="lang-option active" data-lang="ar">
+              <img src="flags/palestine.svg" alt="فلسطين" class="lang-flag-img">
+              <span>العربية (AR)</span>
+            </div>
+            <div class="lang-option" data-lang="en">
+              <img src="flags/uk.svg" alt="بريطانيا" class="lang-flag-img">
+              <span>English (EN)</span>
+            </div>
+            <div class="lang-option" data-lang="sv">
+              <img src="flags/sweden.svg" alt="السويد" class="lang-flag-img">
+              <span>Svenska (SV)</span>
+            </div>
+            <div class="lang-option" data-lang="tr">
+              <img src="flags/turkey.svg" alt="تركيا" class="lang-flag-img">
+              <span>Türkçe (TR)</span>
+            </div>
+          </div>
+          <select id="languageSelect" class="language-selector" style="display:none;">
+            <option value="ar">العربية (AR)</option>
+            <option value="en">English (EN)</option>
+            <option value="sv">Svenska (SV)</option>
+            <option value="tr">Türkçe (TR)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Single Product Details Section -->
+  <main class="section-wrapper">
+    <div class="product-details-container">
+      
+      <!-- Product Image Container -->
+      <div style="text-align:center; background:#0B0F17; border-radius:14px; padding:20px; border:1px solid var(--border-color); position:relative;">
+        <span id="badgeTag" class="card-badge emerald" style="position:absolute; top:15px; right:15px;">أعماق 12m 🚀</span>
+        <img id="productDetailImg" src="iridium_box.jpg" alt="جهاز GS Iridium 3D" class="product-details-img" style="object-fit:contain; max-height:440px; border-radius:8px; width:100%; transition:all 0.3s ease;">
+        
+        <!-- Thumbnail Gallery for GS Iridium 3D -->
+        <div id="productGalleryThumbnails" style="display:flex; justify-content:center; gap:12px; margin-top:18px; flex-wrap:wrap;">
+          <img src="iridium_box.jpg" alt="صندوق وباقة GS Iridium 3D" onclick="changeProductImage(this)" style="width:75px; height:75px; object-fit:cover; border-radius:10px; border:2px solid var(--primary-gold); cursor:pointer; transition:all 0.2s ease;">
+          <img src="iridium_probes.jpg" alt="أجهزة الحساسات والجسّاسات GS Iridium 3D" onclick="changeProductImage(this)" style="width:75px; height:75px; object-fit:cover; border-radius:10px; border:2px solid var(--border-color); cursor:pointer; transition:all 0.2s ease;">
+          <img src="2026-07-28_173558.png" alt="جهاز GS Iridium 3D" onclick="changeProductImage(this)" style="width:75px; height:75px; object-fit:cover; border-radius:10px; border:2px solid var(--border-color); cursor:pointer; transition:all 0.2s ease;">
+        </div>
+      </div>
+
+      <!-- Details Info Box -->
+      <div>
+        <span style="color:var(--accent-emerald); font-weight:800; font-size:0.9rem; letter-spacing:1px;">SWEDISH TECHNOLOGY - GOLDEN SENS</span>
+        <h1 id="productDetailTitle" style="font-size:2.2rem; font-weight:900; color:var(--primary-gold); margin:6px 0 10px;">جهاز GS Iridium 3D</h1>
+        
+        <div id="productDetailPrice" style="font-size:1.9rem; font-weight:900; color:var(--primary-gold); margin-bottom:16px;">
+          1,800 €
+        </div>
+
+        <p id="productDetailSubtitle" style="color:var(--text-muted); font-size:1.05rem; line-height:1.6; margin-bottom:20px; border-right:3px solid var(--primary-gold); padding-right:12px;">
+          وضعيات مسح مرنة تلائم كافة التضاريس. يمنحك الجهاز خيارات متعددة لمسح التربة وتحديد ما تحت الأرض بأساليب مختلفة ودقيقة.
+        </p>
+
+        <!-- Dynamic Specs Container -->
+        <div class="placeholder-text-box" style="margin-bottom:24px;">
+          <strong style="display:block; margin-bottom:12px; color:var(--primary-gold); font-size:1.1rem;">
+            <i class="fas fa-microchip"></i> المواصفات الفنية والتقنية:
+          </strong>
+          
+          <ul id="productSpecsList" class="specs-bullet-list">
+            <li><i class="fas fa-crosshairs"></i> <strong>المسح النقطي الموجه:</strong> كشف دقيق ومحدد للأهداف.</li>
+            <li><i class="fas fa-sync-alt"></i> <strong>المسح التلقائي المستمر:</strong> مسح مساحات واسعة بسلاسة.</li>
+            <li><i class="fas fa-bolt"></i> <strong>التصوير اللحظي الفوري:</strong> إظهار نتائج المسح في الوقت الفعلي.</li>
+            <li><i class="fas fa-balance-scale"></i> <strong>مؤشر الموازنة والاستقرار:</strong> استقرار عالٍ في كافة أنواع التربة.</li>
+            <li><i class="fas fa-gem"></i> <strong>التحليل المتقدم للأهداف الثمينة:</strong> تمييز الذهب والمعادن الثمينة.</li>
+            <li><i class="fas fa-chart-area"></i> <strong>نظام تمثيل مرئي ذكي:</strong> رسومات وبيانات ثلاثية الأبعاد واضحة.</li>
+            <li><i class="fas fa-palette"></i> <strong>توجيه لوني للأهداف:</strong> الألوان المحددة لنوع المعدن والفراغ.</li>
+            <li><i class="fas fa-brain"></i> <strong>التعرف الذكي وحفظ الأهداف المخصصة:</strong> تخزين بيانات المسح الميداني.</li>
+            <li><i class="fas fa-volume-up"></i> <strong>نظام صوتي متجاوب:</strong> تنبيهات صوتية واضحة ومقترنة بالعمق.</li>
+            <li><i class="fas fa-battery-full"></i> <strong>نظام ذكي لإدارة الطاقة والشحن:</strong> بطارية تدوم لساعات طويلة من العمل.</li>
+            <li><i class="fas fa-running"></i> <strong>احترافية وسهولة في الحركة:</strong> تصميم مريح خفيف الوزن.</li>
+            <li><i class="fas fa-globe"></i> <strong>دعم متعدد للغات:</strong> واجهات عالمية سهلة الاستخدام.</li>
+            <li><i class="fas fa-satellite-dish"></i> <strong>دمج متعدد للترددات:</strong> تحديد المعادن والكنوز بدقة متناهية.</li>
+            <li><i class="fas fa-laptop-code"></i> <strong>تحليل متقدم عبر برنامج GS MAGNOVA:</strong> معالجة ثلاثية الأبعاد احترافية.</li>
+            <li><i class="fas fa-cube"></i> <strong>تصوير الجدران وبجميع الاتجاهات:</strong> كشف كامل للمباني والكهوف والجدران.</li>
+            <li><i class="fas fa-file-pdf" style="color:#ff4d4d;"></i> <strong>دليل الاستخدام:</strong> كراسة التعلم والتشغيل الميداني متوفرة بصيغة PDF للتحميل المباشر.</li>
+          </ul>
+        </div>
+
+        <a id="whatsappBtn" href="https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20طلب%20جهاز%20GS%20Iridium%203D" target="_blank" class="btn-whatsapp-checkout">
+          <i class="fab fa-whatsapp" style="font-size:1.4rem;"></i> الاستفسار والطلب الفوري عبر الواتساب
+        </a>
+
+        <a id="iridiumManualBtn" href="GS_Iridiumدليل الاستخدامl.pdf" target="_blank" download style="display:flex; align-items:center; justify-content:center; gap:10px; background:linear-gradient(135deg, rgba(255,215,0,0.15) 0%, rgba(18,24,38,0.95) 100%); color:var(--primary-gold); font-weight:800; font-size:1.05rem; padding:15px 24px; border-radius:12px; text-decoration:none; margin-top:14px; border:1px solid var(--primary-gold); box-shadow:0 4px 20px rgba(255,215,0,0.2); transition:all 0.3s ease;">
+          <i class="fas fa-file-pdf" style="font-size:1.5rem; color:#ff4d4d;"></i> تحميل GS_Iridium دليل الاستخدام (PDF)
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- European Quality Badges Section -->
+  <section class="eu-quality-section">
+    <div class="eu-quality-container">
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon">CE</div>
+        <div class="eu-badge-info">
+          <strong>مطابقة الجودة الأوروبية</strong>
+          <span>CE Mark Certified</span>
+        </div>
+      </div>
+
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon">ISO</div>
+        <div class="eu-badge-info">
+          <strong>شهادة الجودة العالمية</strong>
+          <span>ISO 9001:2015</span>
+        </div>
+      </div>
+
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon"><i class="fas fa-flag"></i></div>
+        <div class="eu-badge-info">
+          <strong>تكنولوجيا سويدية معتمدة</strong>
+          <span>Made in Sweden / EU</span>
+        </div>
+      </div>
+
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon"><i class="fas fa-check-double"></i></div>
+        <div class="eu-badge-info">
+          <strong>اعتماد TÜV Rheinland</strong>
+          <span>Safety & Standards</span>
+        </div>
+      </div>
+
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon"><i class="fas fa-leaf"></i></div>
+        <div class="eu-badge-info">
+          <strong>معيار البيئة الأوروبي</strong>
+          <span>RoHS Compliant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom:12px;">
+          <img src="ChatGPT Image 23 يونيو 2026، 02_07_49 م.png" alt="شعار Golden Sens" style="height:45px;" onerror="this.style.display='none'">
+          <div class="brand-title"><span class="brand-name">GOLDEN SENS</span></div>
+        </a>
+        <p>شركة سويدية متخصصة في بناء وتطوير أجهزة كشف المعادن والماسحات الجيوفيزيائية ثلاثية الأبعاد. وانظمه الحمايه</p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">الكاشفات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="programs.html">البرامج</a></li>
+          <li><a href="learn.html">تعلم (يوتيوب)</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">فئات الأجهزة</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">الحث النبضي (PI)</a></li>
+          <li><a href="index.html">ماسحات ضوئية 3D</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">التواصل والمقر</h4>
+        <ul class="footer-links">
+          <li><i class="fas fa-map-marker-alt" style="color:var(--primary-gold);"></i> <span>المقر: GOLDEN SENSITIVITY AB, BREDGRÄND 15, 753 20 UPPSALA (السويد)</span></li>
+          <li><a href="tel:+970595283261" style="color:var(--text-main); text-decoration:none;"><i class="fas fa-phone" style="color:var(--primary-gold);"></i> الاتصال: +4670 739 06 16</a></li>
+          <li>
+            <a href="https://wa.me/970595283261" target="_blank" class="footer-wa-btn" title="محادثات الواتساب الرسمية">
+              <i class="fab fa-whatsapp"></i> الواتساب الرسمي
+            </a>
+          </li>
+          <li><i class="fas fa-envelope" style="color:var(--accent-cyan);"></i> البريد: info@goldensens.se</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Golden Sensitivity AB - جميع الحقوق محفوظة لشركة Golden Sensitivity AB السويدية.</p>
+    </div>
+  </footer>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    if (productId === 'gs9000') {
+      document.getElementById('productDetailTitle').textContent = 'جهاز GS9000';
+      document.getElementById('productDetailPrice').textContent = '10,000 €';
+      document.getElementById('productDetailImg').src = 'GS9000.png';
+      document.getElementById('badgeTag').textContent = 'الأول عالمياً بتقنية 4D 🌟';
+      document.getElementById('productDetailSubtitle').textContent = 'كاشف معادن سريع متعدد الترددات لاسلكي بالكامل.. عالي الأداء على الأرض لصيد الذهب والآثار، وعلى الشاطئ للعملات والمجوهرات حتى على الرمال الرطبة وتحت الماء لصيد الكنوز. الجهاز الأول بالعالم بهذه التقنية التي تعتمد على رسم 4D للحقل المعدني.';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20طلب%20جهاز%20GS9000';
+      document.getElementById('productSpecsList').innerHTML = `
+        <li><i class="fas fa-wifi"></i> <strong>الاتصال والسرعة:</strong> كاشف معادن سريع متعدد الترددات لاسلكي بالكامل.</li>
+        <li><i class="fas fa-cube"></i> <strong>ابتكار 4D عالمي:</strong> الجهاز الأول في العالم بهذه التقنية التي تعتمد على رسم 4D (رباعي الأبعاد) للحقل المعدني.</li>
+        <li><i class="fas fa-gem"></i> <strong>الأداء المتعدد والتطبيق:</strong> كاشف عالي الأداء على الأرض لصيد الذهب والآثار، وعلى الشاطئ للعملات والمجوهرات حتى على الرمال الرطبة.</li>
+        <li><i class="fas fa-water"></i> <strong>العمل تحت الماء:</strong> مخصص للصيد والبحث عن الكنوز تحت الماء وفي الشواطئ الرطبة.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>العمق الأقصى:</strong> يصل إلى 3 متراً في باطن الأرض.</li>
+        <li><i class="fas fa-wave-square"></i> <strong>تكنولوجيا الحث النبضي المتقدمة (PI):</strong> تخترق أعتى التربات والمغناطيسية.</li>
+        <li><i class="fas fa-shield-alt"></i> <strong>الضمان:</strong> 2 سنوات ضمان شامل معتمد.</li>
+        <li><i class="fas fa-globe"></i> <strong>دعم متعدد للغات:</strong> واجهات مستخدم سهلة وبسيطة.</li>
+      `;
+    } else if (productId === 'gpr-radar') {
+      document.getElementById('productDetailTitle').textContent = 'جهاز GPR Radar';
+      document.getElementById('productDetailPrice').textContent = '18,900 €';
+      document.getElementById('productDetailImg').src = 'ChatGPT Image 23 يونيو 2026، 02_07_49 م.png';
+      document.getElementById('badgeTag').textContent = 'رادار اختراق الأرض 📡';
+      document.getElementById('productDetailSubtitle').textContent = 'نظام راداري جيوفيزيائي عالي الدقة لكشف التكهفات والفراغات والمقابر الدفينة.';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20طلب%20جهاز%20GPR%20Radar';
+      document.getElementById('productSpecsList').innerHTML = `
+        <li><i class="fas fa-check-circle"></i> <strong>العمق الأقصى:</strong> 6 متراً.</li>
+        <li><i class="fas fa-shield-alt"></i> <strong>الضمان:</strong> 2 سنوات.</li>
+        <li><i class="fas fa-radar"></i> <strong>التردد الراداري:</strong> مسح ثلاثي الأبعاد للجدران والأرضيات.</li>
+      `;
+    } else if (productId === 'water-detector') {
+      document.getElementById('productDetailTitle').textContent = 'جهاز كشف المياه والآبار';
+      document.getElementById('productDetailPrice').textContent = '22,000 €';
+      document.getElementById('productDetailImg').src = 'ChatGPT Image 23 يونيو 2026، 02_07_49 م.png';
+      document.getElementById('badgeTag').textContent = 'مياه وآبار 💧';
+      document.getElementById('productDetailSubtitle').textContent = 'نظام استكشاف المياه الجوفية والآبار الارتوازية وتحديد نسبة الملوحة.';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20طلب%20جهاز%20كشف%20المياه';
+      document.getElementById('productSpecsList').innerHTML = `
+        <li><i class="fas fa-check-circle"></i> <strong>العمق الأقصى:</strong> 100 متر.</li>
+        <li><i class="fas fa-shield-alt"></i> <strong>الضمان:</strong> 2 سنوات.</li>
+        <li><i class="fas fa-water"></i> <strong>تحديد مصادر المياه:</strong> عذبة، مالحة، وكبريتية.</li>
+      `;
+
+    } else if (productId === 'magnova-lite') {
+      document.getElementById('productDetailTitle').textContent = 'GS_MAGNOVA LITE';
+      document.getElementById('productDetailPrice').textContent = '600 €';
+      document.getElementById('badgeTag').style.background = 'linear-gradient(135deg,#00B4D8,#0077B6)';
+      document.getElementById('productDetailSubtitle').textContent = 'البداية المثالية للكشف الميداني — كاشف الكنوز مع جهاز لوحي وبرنامج GS_MAGNOVA.';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20الاستفسار%20عن%20GS_MAGNOVA_LITE';
+      document.getElementById('productSpecsList').innerHTML = `
+        <li><i class="fas fa-arrow-down"></i> <strong>عمق الكشف:</strong> يصل إلى 8 أمتار.</li>
+        <li><i class="fas fa-expand-arrows-alt"></i> <strong>المحتويات:</strong> كاشف الكنوز + جهاز لوحي + برنامج GS_MAGNOVA.</li>
+        <li><i class="fas fa-tools"></i> <strong>الاستخدام:</strong> البحث عن الكنوز، والكشف عن التجاويف والأنفاق.</li>
+        <li><i class="fas fa-sliders-h"></i> <strong>أوضاع التشغيل:</strong> المسح الأرضي ثلاثي الأبعاد، الصوت الحي (مقياس المغناطيسية).</li>
+        <li><i class="fas fa-gem"></i> <strong>الكشف:</strong> صناديق الكنوز، التجاويف، والأنفاق المدفونة.</li>
+        <li><i class="fas fa-mobile-alt"></i> <strong>التطبيق:</strong> يعمل مع تطبيق GS_MAGNOVA العالمي.</li>
+        <li><i class="fas fa-shield-alt"></i> <strong>الضمان:</strong> 2 سنوات ضمان شامل معتمد.</li>
+      `;
+
+    } else if (productId === 'magnova-plus') {
+      document.getElementById('productDetailTitle').textContent = 'GS_MAGNOVA PLUS';
+      document.getElementById('productDetailPrice').textContent = '2,000 €';
+      document.getElementById('productDetailSubtitle').textContent = 'الأداء الاحترافي للباحثين المتقدمين — كاشف الكنوز مع جهاز لوحي وبرنامج GS_MAGNOVA.';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20الاستفسار%20عن%20GS_MAGNOVA_PLUS';
+      document.getElementById('productSpecsList').innerHTML = `
+        <li><i class="fas fa-arrow-down"></i> <strong>عمق الكشف:</strong> يصل إلى 12 متراً.</li>
+        <li><i class="fas fa-expand-arrows-alt"></i> <strong>المحتويات:</strong> كاشف الكنوز + جهاز لوحي + برنامج GS_MAGNOVA.</li>
+        <li><i class="fas fa-tools"></i> <strong>التطبيق:</strong> البحث عن الكنوز، علم الآثار، وصيد الذهب الطبيعي.</li>
+        <li><i class="fas fa-sliders-h"></i> <strong>أوضاع التشغيل:</strong> المسح 3D، Pinpointer، Magnetometer، Mineral Scan.</li>
+        <li><i class="fas fa-gem"></i> <strong>الكشف:</strong> معادن الذهب، صناديق الكنوز، المجوهرات والتحف.</li>
+        <li><i class="fas fa-mobile-alt"></i> <strong>التطبيق:</strong> يعمل مع تطبيق GS_MAGNOVA العالمي.</li>
+        <li><i class="fas fa-shield-alt"></i> <strong>الضمان:</strong> 2 سنوات ضمان شامل معتمد.</li>
+      `;
+
+    } else if (productId === 'magnova-pro') {
+      document.getElementById('productDetailTitle').textContent = 'GS_MAGNOVA PRO';
+      document.getElementById('productDetailPrice').textContent = '1,800 €';
+      document.getElementById('badgeTag').style.background = 'linear-gradient(135deg,#00e676,#00a152)';
+      document.getElementById('badgeTag').style.color = '#000';
+      document.getElementById('productDetailSubtitle').textContent = 'المنظومة الكاملة للمحترفين — جميع أوضاع الكشف في جهاز واحد.';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20الاستفسار%20عن%20GS_MAGNOVA_PRO';
+      document.getElementById('productSpecsList').innerHTML = `
+        <li><i class="fas fa-arrow-down"></i> <strong>عمق الكشف:</strong> يصل إلى 12 متراً.</li>
+        <li><i class="fas fa-expand-arrows-alt"></i> <strong>المحتويات:</strong> كاشف الكنوز + جهاز لوحي + برنامج GS_MAGNOVA.</li>
+        <li><i class="fas fa-tools"></i> <strong>التطبيق:</strong> البحث عن الكنوز، علم الآثار، وصيد الذهب الطبيعي.</li>
+        <li><i class="fas fa-sliders-h"></i> <strong>أوضاع التشغيل:</strong> المسح 3D، Pinpointer، Magnetometer، Mineral Scan — كامل النظام.</li>
+        <li><i class="fas fa-gem"></i> <strong>الكشف:</strong> معادن الذهب، صناديق الكنوز، المجوهرات والتحف الأثرية.</li>
+        <li><i class="fas fa-star"></i> <strong>المستوى:</strong> نظام احترافي كامل للمهندسين والمحترفين.</li>
+        <li><i class="fas fa-mobile-alt"></i> <strong>التطبيق:</strong> يعمل مع تطبيق GS_MAGNOVA العالمي.</li>
+        <li><i class="fas fa-shield-alt"></i> <strong>الضمان:</strong> 2 سنوات ضمان شامل معتمد.</li>
+      `;
+
+    } else if (productId === 'data-logger') {
+      document.getElementById('productDetailTitle').textContent = 'GS data_logger';
+      document.getElementById('productDetailPrice').textContent = '1,000 €';
+      document.getElementById('productDetailImg').src = 'data_logger.png';
+      document.getElementById('badgeTag').textContent = 'مسجّل 3D 📡';
+      document.getElementById('badgeTag').style.background = '#00e5ff';
+      document.getElementById('badgeTag').style.color = '#000';
+      document.getElementById('productDetailSubtitle').textContent = 'يحوّل الإشارات الصوتية الصادرة من التربة إلى صورة ثلاثية الأبعاد تفاعلية — مع تطبيق GS MAGNOVA.';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/970595283261?text=مرحباً،%20أرغب%20في%20الاستفسار%20عن%20GS%20data_logger';
+      document.getElementById('productSpecsList').innerHTML = `
+        <li><i class="fas fa-wave-square"></i> <strong>التقنية:</strong> يحوّل الإشارات الصوتية الصادرة من التربة إلى صورة 3D تفاعلية دقيقة.</li>
+        <li><i class="fas fa-mobile-alt"></i> <strong>التطبيق:</strong> يعمل بالتكامل الكامل مع تطبيق GS MAGNOVA العالمي.</li>
+        <li><i class="fas fa-layer-group"></i> <strong>الطبقات:</strong> تحليل متعدد الطبقات للكشف الدقيق والتمييز بين الأهداف.</li>
+        <li><i class="fas fa-save"></i> <strong>الحفظ:</strong> تخزين واسترجاع جلسات المسح الميداني بالكامل.</li>
+        <li><i class="fas fa-wifi"></i> <strong>الاتصال:</strong> Bluetooth وUSB لربط الجهاز بالتطبيق بسرعة.</li>
+        <li><i class="fas fa-chart-area"></i> <strong>التمثيل المرئي:</strong> رسومات ثلاثية الأبعاد واضحة وتفاعلية.</li>
+        <li><i class="fas fa-palette"></i> <strong>التوجيه اللوني:</strong> ألوان محددة لنوع المعدن والفراغ تحت الأرض.</li>
+        <li><i class="fas fa-shield-alt"></i> <strong>الضمان:</strong> 2 سنوات ضمان شامل معتمد.</li>
+      `;
+    }
+
+    if (productId && productId !== 'iridium-3d') {
+      const manualBtn = document.getElementById('iridiumManualBtn');
+      if (manualBtn) manualBtn.style.display = 'none';
+      const galleryThumbs = document.getElementById('productGalleryThumbnails');
+      if (galleryThumbs) galleryThumbs.style.display = 'none';
+    }
+
+    function changeProductImage(element) {
+      const mainImg = document.getElementById('productDetailImg');
+      if (mainImg && element) {
+        mainImg.src = element.src;
+        const thumbs = document.querySelectorAll('#productGalleryThumbnails img');
+        thumbs.forEach(thumb => {
+          thumb.style.borderColor = 'var(--border-color)';
+        });
+        element.style.borderColor = 'var(--primary-gold)';
+      }
+    }
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

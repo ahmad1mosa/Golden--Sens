@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا | Golden Sens</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .contact-info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+    }
+    .contact-info-card h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--primary-gold);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-detail-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .contact-detail-row:last-child { border-bottom: none; }
+    .contact-detail-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255,215,0,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--primary-gold);
+      flex-shrink: 0;
+    }
+    .contact-detail-icon.wa { background: rgba(37,211,102,0.15); color: #25D366; }
+    .contact-detail-text strong { display: block; color: var(--text-main); font-size: 0.9rem; }
+    .contact-detail-text span { color: var(--text-muted); font-size: 0.85rem; }
+    .contact-form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+    }
+    .contact-form-card h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--primary-gold);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      transition: var(--transition);
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary-gold);
+      background: rgba(255,215,0,0.04);
+    }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .btn-send-msg {
+      width: 100%;
+      background: var(--gold-btn-gradient);
+      color: #000;
+      border: none;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-weight: 900;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: var(--transition);
+    }
+    .btn-send-msg:hover { box-shadow: 0 6px 20px rgba(255,215,0,0.4); transform: translateY(-2px); }
+    .success-msg {
+      display: none;
+      background: rgba(0,230,118,0.12);
+      border: 1px solid var(--accent-emerald);
+      border-radius: var(--radius-sm);
+      color: var(--accent-emerald);
+      padding: 14px;
+      text-align: center;
+      font-weight: 700;
+      margin-top: 14px;
+    }
+    .map-container {
+      margin-top: 50px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-card);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 380px;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="ChatGPT Image 23 يونيو 2026، 02_07_49 م.png" alt="شعار Golden Sens" onerror="this.style.display='none'">
+        <div class="brand-title">
+          <span class="brand-name">GOLDEN SENS</span>
+          <span class="brand-sub">كواشف المعادن والماسحات 3D</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الكاشفات</a></li>
+          <li><a href="about.html" class="nav-link">من نحن</a></li>
+          <li><a href="programs.html" class="nav-link">البرامج</a></li>
+          <li><a href="learn.html" class="nav-link">تعلم</a></li>
+          <li><a href="index.html#trust" class="nav-link">الخدمة والدعم</a></li>
+          <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="https://wa.me/970595283261" target="_blank" class="header-wa-icon" title="تواصل فوري عبر الواتساب">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="custom-lang-dropdown">
+          <button type="button" class="lang-dropdown-btn">
+            <img src="flags/palestine.svg" alt="فلسطين" class="lang-flag-img">
+            <span class="lang-text">العربية (AR)</span>
+            <i class="fas fa-chevron-down lang-chevron"></i>
+          </button>
+          <div class="lang-dropdown-menu">
+            <div class="lang-option active" data-lang="ar">
+              <img src="flags/palestine.svg" alt="فلسطين" class="lang-flag-img">
+              <span>العربية (AR)</span>
+            </div>
+            <div class="lang-option" data-lang="en">
+              <img src="flags/uk.svg" alt="بريطانيا" class="lang-flag-img">
+              <span>English (EN)</span>
+            </div>
+            <div class="lang-option" data-lang="sv">
+              <img src="flags/sweden.svg" alt="السويد" class="lang-flag-img">
+              <span>Svenska (SV)</span>
+            </div>
+            <div class="lang-option" data-lang="tr">
+              <img src="flags/turkey.svg" alt="تركيا" class="lang-flag-img">
+              <span>Türkçe (TR)</span>
+            </div>
+          </div>
+          <select id="languageSelect" class="language-selector" style="display:none;">
+            <option value="ar">العربية (AR)</option>
+            <option value="en">English (EN)</option>
+            <option value="sv">Svenska (SV)</option>
+            <option value="tr">Türkçe (TR)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-wrapper">
+    <div class="section-header">
+      <span class="section-subtitle">تواصل مع فريقنا</span>
+      <h2 class="section-title"><i class="fas fa-headset" style="color:var(--primary-gold);"></i> اتصل بنا</h2>
+      <p style="color:var(--text-muted);max-width:560px;margin:12px auto 0;">نحن هنا للإجابة عن كافة استفساراتك حول أجهزتنا. تواصل معنا عبر أي من قنوات التواصل التالية.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- معلومات التواصل -->
+      <div class="contact-info-card">
+        <h3><i class="fas fa-address-book"></i> معلومات التواصل</h3>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-detail-text">
+            <strong>المقر الرئيسي</strong>
+            <span>GOLDEN SENSITIVITY AB<br>BREDGRÄND 15<br>753 20 UPPSALA (السويد)</span>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-detail-text">
+            <strong>رقم الاتصال المباشر</strong>
+            <a href="tel:+970595283261" style="color:var(--text-gold);text-decoration:none;display:block;" dir="ltr">+46 70 739 06 16</a>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon wa"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-detail-text">
+            <strong>واتساب مباشر</strong>
+            <a href="https://wa.me/970595283261" target="_blank" style="color:#25D366;text-decoration:none;font-weight:700;">
+              <span>فتح محادثة الواتساب</span> ←
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon" style="background:rgba(0,229,255,0.1);color:var(--accent-cyan);"><i class="fas fa-envelope"></i></div>
+          <div class="contact-detail-text">
+            <strong>البريد الإلكتروني</strong>
+            <span>info@goldensens.se</span>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon" style="background:rgba(255,0,0,0.1);color:#FF0000;"><i class="fab fa-youtube"></i></div>
+          <div class="contact-detail-text">
+            <strong>قناة اليوتيوب</strong>
+            <a href="https://www.youtube.com/@GoldenSensitivity" target="_blank" style="color:#FF0000;text-decoration:none;">
+              @GoldenSensitivity
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon" style="background:rgba(24,119,242,0.15);color:#1877F2;"><i class="fab fa-facebook-f"></i></div>
+          <div class="contact-detail-text">
+            <strong>مجموعة الفيسبوك الرسمية</strong>
+            <a href="https://www.facebook.com/groups/goldensens" target="_blank" style="color:#1877F2;text-decoration:none;font-weight:700;">
+              <span>Golden Sens — انضم للمجموعة</span> ←
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon" style="background:rgba(0,136,204,0.15);color:#0088cc;"><i class="fab fa-telegram-plane"></i></div>
+          <div class="contact-detail-text">
+            <strong>قناة التلجرام الرسمية</strong>
+            <a href="https://t.me/GoldenSens" target="_blank" style="color:#0088cc;text-decoration:none;font-weight:700;">
+              <span>Golden Sens — قناة التلجرام</span> ←
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- نموذج إرسال رسالة -->
+      <div class="contact-form-card">
+        <h3><i class="fas fa-paper-plane"></i> أرسل لنا رسالة</h3>
+        <form id="contactForm" onsubmit="handleContactForm(event)">
+          <div class="form-group">
+            <label for="visitorPhone"><i class="fas fa-phone"></i> رقم هاتفك</label>
+            <input type="tel" id="visitorPhone" name="phone" placeholder="أدخل رقم هاتفك للرد عليك" required>
+          </div>
+          <div class="form-group">
+            <label for="visitorEmail"><i class="fas fa-envelope"></i> بريدك الإلكتروني (اختياري)</label>
+            <input type="email" id="visitorEmail" name="email" placeholder="example@mail.com">
+          </div>
+          <div class="form-group">
+            <label for="visitorMsg"><i class="fas fa-comment-dots"></i> رسالتك</label>
+            <textarea id="visitorMsg" name="message" placeholder="اكتب استفسارك أو طلبك هنا..." required></textarea>
+          </div>
+          <button type="submit" class="btn-send-msg">
+            <i class="fas fa-paper-plane"></i> إرسال الرسالة
+          </button>
+          <div id="successMsg" class="success-msg">
+            <i class="fas fa-check-circle"></i> تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- خريطة جوجل للموقع -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8118.282484826204!2d18.0634!3d59.3326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa656d172638eba96!2sStockholm%2C%20Sweden!5e0!3m2!1sar!2sse!4v1722000000000!5m2!1sar!2sse"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="موقع Golden Sens في السويد">
+      </iframe>
+    </div>
+  </section>
+
+  <section class="eu-quality-section">
+    <div class="eu-quality-container">
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon">CE</div>
+        <div class="eu-badge-info"><strong>مطابقة الجودة الأوروبية</strong><span>CE Mark Certified</span></div>
+      </div>
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon">ISO</div>
+        <div class="eu-badge-info"><strong>شهادة الجودة العالمية</strong><span>ISO 9001:2015</span></div>
+      </div>
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon"><i class="fas fa-flag"></i></div>
+        <div class="eu-badge-info"><strong>تكنولوجيا سويدية معتمدة</strong><span>Made in Sweden / EU</span></div>
+      </div>
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon"><i class="fas fa-check-double"></i></div>
+        <div class="eu-badge-info"><strong>اعتماد TÜV Rheinland</strong><span>Safety &amp; Standards</span></div>
+      </div>
+      <div class="eu-badge-item">
+        <div class="eu-badge-icon"><i class="fas fa-leaf"></i></div>
+        <div class="eu-badge-info"><strong>معيار البيئة الأوروبي</strong><span>RoHS Compliant</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom:12px;">
+          <img src="ChatGPT Image 23 يونيو 2026، 02_07_49 م.png" alt="شعار Golden Sens" style="height:45px;" onerror="this.style.display='none'">
+          <div class="brand-title"><span class="brand-name">GOLDEN SENS</span></div>
+        </a>
+        <p>شركة سويدية متخصصة في بناء وتطوير أجهزة كشف المعادن والماسحات الجيوفيزيائية ثلاثية الأبعاد. وانظمه الحمايه</p>
+      </div>
+      <div>
+        <h4 class="footer-title">روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">الكاشفات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="programs.html">البرامج</a></li>
+          <li><a href="learn.html">تعلم</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">فئات الأجهزة</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">الحث النبضي (PI)</a></li>
+          <li><a href="index.html">ماسحات ضوئية 3D</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">التواصل والمقر</h4>
+        <ul class="footer-links">
+          <li><i class="fas fa-map-marker-alt" style="color:var(--primary-gold);"></i> <span>المقر: GOLDEN SENSITIVITY AB, BREDGRÄND 15, 753 20 UPPSALA (السويد)</span></li>
+          <li>
+            <a href="tel:+970595283261" style="color:var(--text-main);text-decoration:none;display:flex;align-items:center;gap:6px;">
+              <i class="fas fa-phone" style="color:var(--primary-gold);"></i>
+              <span dir="ltr">+46 70 739 06 16</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/970595283261" target="_blank" class="footer-wa-btn">
+              <i class="fab fa-whatsapp"></i> الواتساب الرسمي
+            </a>
+          </li>
+          <li><i class="fas fa-envelope" style="color:var(--accent-cyan);"></i> info@goldensens.se</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Golden Sensitivity AB - جميع الحقوق محفوظة لشركة Golden Sensitivity AB السويدية.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    async function handleContactForm(e) {
+      e.preventDefault();
+      const phone = document.getElementById('visitorPhone').value;
+      const email = document.getElementById('visitorEmail').value;
+      const message = document.getElementById('visitorMsg').value;
+      const targetEmail = 'grevenpro@mail.ru'; // hidden from UI
+
+      // إرسال عبر FormSubmit (لا يظهر الإيميل في الصفحة)
+      const formData = new FormData();
+      formData.append('_to', targetEmail);
+      formData.append('phone', phone);
+      formData.append('_replyto', email || 'no-reply@goldensens.se');
+      formData.append('message', message);
+      formData.append('_subject', 'استفسار جديد من موقع Golden Sens');
+      formData.append('_captcha', 'false');
+      formData.append('_template', 'table');
+
+      try {
+        await fetch('https://formsubmit.co/ajax/grevenpro@mail.ru', {
+          method: 'POST',
+          body: formData,
+        });
+      } catch (_) { /* fail silently */ }
+
+      document.getElementById('contactForm').reset();
+      document.getElementById('successMsg').style.display = 'block';
+      setTimeout(() => { document.getElementById('successMsg').style.display = 'none'; }, 5000);
+    }
+  </script>
+</body>
+</html>
